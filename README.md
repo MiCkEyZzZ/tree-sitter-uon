@@ -19,7 +19,7 @@
 
 ## Пример
 
-```uon
+```уон
 {
   имя: "Привет, мир!",
   возраст: 42,
@@ -95,4 +95,4 @@ npx tree-sitter build --wasm
 
 ## Лицензия
 
-MIT
+- [MIT License](LICENSE)
