@@ -1,6 +1,6 @@
 # tree-sitter-uon
 
-[tree-sitter](https://tree-sitter.github.io/tree-sitter/) грамматика для **UON
+[Tree-sitter](https://tree-sitter.github.io/tree-sitter/) - грамматика для **UON
 (Универсальная Объектная Нотация)** — формата данных, похожего на JSON, но с ключевыми
 словами на русском языке.
 
