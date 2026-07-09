@@ -1,0 +1,110 @@
+==================
+Документ с несколькими значениями
+==================
+
+42
+"text"
+пусто
+
+---
+
+(document
+  (value
+    (number))
+  (value
+    (string))
+  (value
+    (null)))
+
+==================
+Сложная структура
+==================
+
+{
+  name: "Тест",
+  count: 100,
+  tags: ["a", "b"],
+  meta: {
+    created: 2024-01-01,
+    duration: 7д,
+    active: истина,
+    note: пусто
+  }
+}
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (identifier)
+        value: (value
+          (string)))
+      (pair
+        key: (identifier)
+        value: (value
+          (number)))
+      (pair
+        key: (identifier)
+        value: (value
+          (array
+            (value
+              (string))
+            (value
+              (string)))))
+      (pair
+        key: (identifier)
+        value: (value
+          (object
+            (pair
+              key: (identifier)
+              value: (value
+                (date)))
+            (pair
+              key: (identifier)
+              value: (value
+                (duration)))
+            (pair
+              key: (identifier)
+              value: (value
+                (boolean)))
+            (pair
+              key: (identifier)
+              value: (value
+                (null)))))))))
+
+==================
+Массив объектов
+==================
+
+[
+  { x: 1, y: 2 },
+  { x: 3, y: 4 }
+]
+
+---
+
+(document
+  (value
+    (array
+      (value
+        (object
+          (pair
+            key: (identifier)
+            value: (value
+              (number)))
+          (pair
+            key: (identifier)
+            value: (value
+              (number)))))
+      (value
+        (object
+          (pair
+            key: (identifier)
+            value: (value
+              (number)))
+          (pair
+            key: (identifier)
+            value: (value
+              (number))))))))

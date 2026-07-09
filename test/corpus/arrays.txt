@@ -1,0 +1,89 @@
+==================
+Пустой массив
+==================
+
+[]
+
+---
+
+(document
+  (value
+    (array)))
+
+==================
+Массив с числами
+==================
+
+[1, 2, 3]
+
+---
+
+(document
+  (value
+    (array
+      (value
+        (number))
+      (value
+        (number))
+      (value
+        (number)))))
+
+==================
+Массив с разными типами
+==================
+
+[1, "two", истина]
+
+---
+
+(document
+  (value
+    (array
+      (value
+        (number))
+      (value
+        (string))
+      (value
+        (boolean)))))
+
+==================
+Массив с завершающей запятой
+==================
+
+[1, 2, 3, ]
+
+---
+
+(document
+  (value
+    (array
+      (value
+        (number))
+      (value
+        (number))
+      (value
+        (number)))))
+
+==================
+Вложенные массивы
+==================
+
+[[1, 2], [3, 4]]
+
+---
+
+(document
+  (value
+    (array
+      (value
+        (array
+          (value
+            (number))
+          (value
+            (number))))
+      (value
+        (array
+          (value
+            (number))
+          (value
+            (number)))))))

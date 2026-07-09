@@ -62,8 +62,8 @@ module.exports = grammar({
     ),
 
     number: $ => token(choice(
-      /\d+\.\d*([eE][+-]?\d+)?/,
-      /\d+/,
+      /-?\d+\.\d*([eE][+-]?\d+)?/,
+      /-?\d+([eE][+-]?\d+)?/,
     )),
 
     boolean: $ => choice(

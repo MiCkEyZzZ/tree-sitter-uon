@@ -1,0 +1,103 @@
+==================
+Пустой объект
+==================
+
+{}
+
+---
+
+(document
+  (value
+    (object)))
+
+==================
+Объект с одной парой
+==================
+
+{ a: 1 }
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (identifier)
+        value: (value
+          (number))))))
+
+==================
+Объект с несколькими парами
+==================
+
+{ name: "Alice", age: 30 }
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (identifier)
+        value: (value
+          (string)))
+      (pair
+        key: (identifier)
+        value: (value
+          (number))))))
+
+==================
+Объект с завершающей запятой
+==================
+
+{ a: 1, b: 2, }
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (identifier)
+        value: (value
+          (number)))
+      (pair
+        key: (identifier)
+        value: (value
+          (number))))))
+
+==================
+Вложенные объекты
+==================
+
+{ outer: { inner: истина } }
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (identifier)
+        value: (value
+          (object
+            (pair
+              key: (identifier)
+              value: (value
+                (boolean)))))))))
+
+==================
+Ключ-строка
+==================
+
+{ "key": 42 }
+
+---
+
+(document
+  (value
+    (object
+      (pair
+        key: (string)
+        value: (value
+          (number))))))
