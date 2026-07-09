@@ -95,4 +95,4 @@ npx tree-sitter build --wasm
 
 ## Лицензия
 
-- [MIT License](LICENSE)
+- [МТИ Лицензия](LICENSE)
