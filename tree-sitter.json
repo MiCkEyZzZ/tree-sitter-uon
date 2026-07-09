@@ -1,0 +1,13 @@
+{
+  "name": "uon",
+  "grammars": [
+    {
+      "name": "uon",
+      "path": ".",
+      "scope": "source.uon"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0"
+  }
+}
